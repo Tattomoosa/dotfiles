@@ -1,0 +1,7 @@
+# Vi style editing
+set editing-mode vi
+
+# Show all completions immediately on first tab
+set show-all-if-ambiguous on
+set completion-ignore-case on
+set menu-complete-display-prefix on
