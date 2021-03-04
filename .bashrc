@@ -1,1 +1,1 @@
-source $HOME/.config/bash/bashrc
+source $HOME/.config/bash/index.bash
