@@ -1,10 +1,7 @@
 # Dotfiles
 
-This is a bare repo. To clone:
+This is a bare repo. To clone the easy way, run the [install script](./install.sh):
 
 ```
-  $ git clone --bare <REPO_URL> .dotfiles
-  $ git --git-dir=$HOME/.dotfiles --work-tree=$HOME
+  $ bash <(https://raw.githubusercontent.com/Tattomoosa/dotfiles/main/.github/install.sh)
 ```
-
-TODO: Setup script in repo that can be run with curl.
