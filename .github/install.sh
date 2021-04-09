@@ -2,12 +2,16 @@
 
 # Based heavily on the script at the end of the fantastic https://www.atlassian.com/git/tutorials/dotfiles
 
+set -e
+set -o pipefail
+
 # Change the repo, change the dotfiles
 REPO_REMOTE=git@github.com:Tattomoosa/dotfiles.git
-REPO_LOCAL=.dotfiles
+REPO_LOCAL=$HOME/.dotfiles
 
-# Clone the repo into .dotfiles
-git clone --bare $REPO $HOME/.dotfiles
+# Clone the repo into ~/.dotfiles
+echo "$REPO_REMOTE $REPO_LOCAL"
+git clone --bare $REPO_REMOTE $REPO_LOCAL
 
 # Create a dotfiles command to interact with the repo globally
 function dotfiles {
