@@ -6,14 +6,14 @@
 REPO=Tattomoosa/dotfiles.git
 REPO_LOCAL=$HOME/.dotfiles
 
-# TODO https argument that uses https
 GITHUB_SSH="git@github.com:"
 GITHUB_HTTPS="https://github.com/"
 
-REPO_REMOTE="$GITHUB_SSH$REPO")
+REPO_REMOTE="$GITHUB_SSH$REPO"
 
-echo $REPO_REMOTE
-exit
+if [[ $1 == "https" ]]; then
+	REPO_REMOTE="$GITHUB_HTTPS$REPO"
+fi
 
 # Clone the repo into ~/.dotfiles
 echo "$REPO_REMOTE $REPO_LOCAL"
