@@ -2,12 +2,18 @@
 
 # Based heavily on the script at the end of the fantastic https://www.atlassian.com/git/tutorials/dotfiles
 
-set -e
-set -o pipefail
-
 # Change the repo, change the dotfiles
-REPO_REMOTE=git@github.com:Tattomoosa/dotfiles.git
+REPO=Tattomoosa/dotfiles.git
 REPO_LOCAL=$HOME/.dotfiles
+
+# TODO https argument that uses https
+GITHUB_SSH="git@github.com:"
+GITHUB_HTTPS="https://github.com/"
+
+REPO_REMOTE="$GITHUB_SSH$REPO")
+
+echo $REPO_REMOTE
+exit
 
 # Clone the repo into ~/.dotfiles
 echo "$REPO_REMOTE $REPO_LOCAL"
