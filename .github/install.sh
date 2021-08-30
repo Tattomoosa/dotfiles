@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Based heavily on the script at the end of the fantastic https://www.atlassian.com/git/tutorials/dotfiles
+# Based heavily on the fantastic https://www.atlassian.com/git/tutorials/dotfiles
 
 # Change the repo, change the dotfiles
 REPO=Tattomoosa/dotfiles.git
@@ -39,3 +39,6 @@ fi;
 
 # Do not show untracked files in this repo
 dotfiles config status.showUntrackedFiles no
+
+# TODO install brew and command line utilites on mac
+# TODO install packages I know I'll want?

@@ -4,9 +4,12 @@ bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
 bind "set completion-ignore-case on"
 
+# TODO this isn't cross-platform
+# macs use brew completion:q
+
 # git completion
-source /usr/share/bash-completion/completions/git
+# source /usr/share/bash-completion/completions/git
 # hostname completion
-source /usr/share/bash-completion/completions/hostname
+# source /usr/share/bash-completion/completions/hostname
 
 COLUMNS=250
