@@ -1,5 +1,3 @@
-echo "executing .bashrc"
-
 source $HOME/.config/bash/index.bash
 
 git config --global core.excludesfile $HOME/.gitignore

@@ -126,7 +126,7 @@ _host() {
         local fg=$COLOR_HOST
         local brace_fg=$COLOR_GREY
         local bg=$COLOR_BG
-        local hostname="$(</etc/hostname)"
+        local hostname="$(hostname)"
         local hostname="${hostname/.*}"
         local str=""
         str="$str\[\033[${bg};${fg}m\]"
